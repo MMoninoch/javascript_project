@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Flipper Simple</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav
+      class="container-fluid flex justify-between md:text-3xl sm:text-xl m-0 p-6 xl:p-0 bg-slate-100 drop-shadow-xl"
+    >
+      <h4
+        class="hover:underline decoration-cyan-600 text-teal-700 hover:text-cyan-600 cursor-pointer"
+      >
+        Color Flipper
+      </h4>
+      <ul class="flex">
+        <button>
+          <a href="color_flipper.html">
+          <li
+            class="mx-6 hover:underline decoration-rose-600 text-slate-700 hover:text-rose-600"
+          >
+            Simple
+          </li>
+        </a>
+        </button>
+        <button>
+          <a href="color_flipper_hex.html">
+          <li
+            class="mx-6 hover:underline decoration-rose-600 text-slate-600 hover:text-rose-600"
+          >
+            Hex
+          </li>
+        </a>
+        </button>
+      </ul>
+    </nav>
+    <div
+      class="container mx-auto h-screen flex flex-col justify-center items-center"
+    >
+      <div class="bg-slate-800 text-white p-20 md:px-40 mb-10 rounded-lg hover:scale-105 ease-linear duration-200 hover:shadow-2xl hover:shadow-blue-500/50">
+        <div>
+          <p class="text-4xl font-semibold">Background Color:</p>
+        </div>
+        <div class="text-center mt-5">
+          <p class="uppercase text-3xl font-semibold text-blue-600" id="color">
+            #f1f5f5
+          </p>
+        </div>
+      </div>
+      <button
+        class="uppercase p-4 px-10 rounded-lg text-white bg-sky-500 hover:bg-sky-700 hover:scale-105 hover:drop-shadow-xl ease-in duration-150 hover:-translate-y-1 text-2xl font-semibold"
+        id="btn"
+      >
+        click me
+      </button>
+    </div>
+    <script src="color_flipper_hex.js"></script>
+  </body>
+</html>
